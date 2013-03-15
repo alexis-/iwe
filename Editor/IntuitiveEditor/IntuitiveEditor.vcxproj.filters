@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{76629f2a-9948-4c0f-bf82-4f772025abbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools">
+      <UniqueIdentifier>{4dac7b83-ea5f-48b7-af50-1c903b056a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{3c7b8d94-8002-43fe-a924-1e5743a051e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Save System">
+      <UniqueIdentifier>{fd181b9f-b4df-49eb-8d74-6ed2fa92a1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Save System\Systems">
+      <UniqueIdentifier>{eaf838a8-fdc6-445f-b24f-c5b138514a8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorDatas.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorInteraction.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportGrid.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectManager.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveSystem.cpp">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveSystemManager.cpp">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClCompile>
+    <ClCompile Include="IWELoadSystem.cpp">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="IWESaveSystem.cpp">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolManager.cpp">
+      <Filter>Source Files\Editor\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorDatas.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorInteraction.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportGrid.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectManager.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSystem.h">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSystemManager.h">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClInclude>
+    <ClInclude Include="IWESaveSystem.h">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolManager.h">
+      <Filter>Source Files\Editor\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

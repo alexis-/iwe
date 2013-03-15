@@ -1,0 +1,431 @@
++ Improve UI
+  + Add Ribbon
+    + Recent projects like Word
+    + Textures
+
++ Physics with plugins
+  + Base physic plugins
+    + real world simulation
+  + Allow ConVar in plugins to change behaviour
+
++ Multi-selection
+  + Show selected items
+  + Show stats
+    + Poly count
+    + Item count
+
++ History
+  + (?) Show an history panel
+  + (?) Add option to save history
+
++ Add multi-user editing
+  + Networking ==> TCP / UDP ?
+  + !! Synchronization
+  + Integrated chat
+  
++ Add terrain editing features
+  + Warcraft 3-like terrain editing
+  + Terrain-altering tools
+    + Even
+    + Increase height
+    + Decrease height
+    + Add noise
+    + ... (Check other editors)
+  + Meta-ball editing
+  + Texture splatting
+  + Different "zones" / heightmaps
+  + Texture adjustment on terrain modification
+  + Water & Fog planes
+  + Extract terrain textures
+  
++ Mesh viewer
+  + View Animations
+  + View bones
+  + ...
+  
++ Import/Export 3DS max mesh
++ Terrain & Plugin tabs
++ Touch screen terrain editing & ent placing
++ NPC Gui building
++ Collision mesh
++ Asset preview (viewport)
++ Plugin interface (ala valve)
++ Option to use a simple menu instead of ribbon
++ Building edition
+  + Group items in buildings
+  + Edit stories
++ Asset properties - Scale visible in asset viewer
++ Import brushes and terrain texture from other formats
+
++++ Online Asset browser & importer
+
+
+CEditorEntity::m_bStickToGround;
+
+
+++ Entities view
+	* Allow to filter by typing text
+	* Allow multi-selection
+	* Context-menu -> Select (All), Delete, Change model, ...
++ Batch actions (Action on a whole lots of units... like renaming, ..)
++ Tools shortcut ==> 1, 2, 3, 4 ...
+
++ Plane & customs (name, text, text size, ...)
+++ Integrate NgPlant
+++ Ribbon
+  * View panel
+    * Show/Hide grid
+	* Show/Hide ::ZERO axis
+	
++ Editor scripting (for example, generate terrain texture and blendmap using script)
+
++ Integrate recast navigation mesh generation
+
+
++ Bug report & annotation
++ Test tab in project settings ==> Allow to run a custom exe to test the map
+* Volumetric lights
+
+** Placing lights
+* Sound placing (with editor ?)  
+** NPC & Script & Quest editors
+  * LUA ?
+  + Customize mesh look
+  
+* 2D Mode -- Autodesk Homestyler
+  
+SSAO
+Cool trees
+HDR/Bloom
+Depth of Field
+Tesselation (maybe?)
+Volumetric light
+Particle Engine
+
+http://shadermap.com/
+ 
+
+* Grid														- OK
+* Display assets											- OK
+* Move camera												- OK
+* Place entities											- OK
+* EntityManager												- OK
+* Instance tree view										- OK
+* Asset Viewer												- IN PROGRESS (90%) - Check terrain view bug
+* Tools														- OK
+* Project Management										- OK
+* Grid+ / Grid-												- OK
+* Camera coordinates										- OK
+* Radio buttons for tools									- OK
+* Save/Load													- OK
+* Import/Export												- NOK
+* Resource Management - Add custom dir						- IN PROGRESS (50%)
+* Fix loose ends											- IN PROGRESS (75%)
+  * Remove close document button							- OK
+  * Move grid with camera									- OK	
+  * Move Tool - Make more intuitive							- OK	
+  * Terrain - Fix Asset Viewer multiple viewport bug		- NOK
+		==> Seem to be triggered by multiple viewports	
+  * Terrain - Fix greyed button bug							- OK
+* Terrain													- IN PROGRESS (70%)
+  * Terrain Creation										- OK
+  * Terrain Brush Decal										- OK
+	* Projective texture									- OK
+	* Mesh													- OK (TODO: Optimize)
+  * Terrain shaping tool									- OK
+	* Height Tool											- OK
+	* Linear height Tool									- OK
+  * Terrain texture painting tool							- OK
+  * Cut holes with stencil, and create caves				- NOK
+  - Select material generator								- NOK
+  - Delete and move terrains								- NOK
+* Voxel Terrain												- IN PROGRESS (30%)
+  * Create backend for voxel terrains (threading, ...) 		- OK
+  * Voxel Region Creation									- OK
+  * Voxel Volume Editor										- IN PROGRESS (30%)
+    * Mouse edit - Geometry Raycast							- IN PROGRESS (75%)
+    * Mouse edit - Plane Raycast							- NOK
+	* Metaball Edit											- NOK
+  * Voxel texturing											- IN PROGRESS (?%)
+	* Back-End												- OK
+	* In-Editor Atlas maker									- NOK
+	* Texturing tool										- NOK
+* Refactoring												- IN PROGRESS (30%)
+	* Module splitting										- OK
+		* Render Engine Module								- OK
+		* Editor Module										- OK
+		* GUI Module										- OK
+	* Plugin System											- OK
+		* Back-end											- OK
+		* Convert Ogre Terrain tools to plugin				- OK
+		* Convert Voxel terrain tools to plugin				- NOK
+	* Fullscreen rendering mode								- NOK
+	* Test button (run game logic)							- NOK
+	* Test profiles (add arguments to the test run)			- NOK
+	* Engine selection										- NOK
+	* Engine options menu									- NOK
+	* Public SDK											- IN PROGRESS (10%)
+		* Interfaces										- IN PROGRESS (80%)
+		* Render Engine sample								- NOK
+		* GUI sample										- NOK
+		* Plugin sample										- NOK
+* Undo/Redo													- IN PROGRESS (?%)
+* Property box												- IN PROGRESS (?%)
+* SkyBox / DomeBox / ...									- NOK
+* Sound Placing												- OK
+* Light Placing												- OK
+* Custom Markers											- NOK
+* Physics													- NOK
+* Asset Specializing (Assets with user-set settings)		- NOK
+* Asset filtering											- NOK
+* Instancing												- NOK
+* Water/Fog planes											- NOK
+
+
+* NPC/Quest Editors (LUA?)								- IN PROGRESS (?%)
+* Editor SDK											- IN PROGRESS
+  * Loading Kit
+  * Sample project sources with loading kit
+
+  
+  
+* Move utils to their own lib
+* Material Edit plugin
+	* Needs dynamic menu
+* Terrain & Voxel plugin
+* Finish UI stuffs (Galeery, .../ PropGrid / Project explorer)
+* Output Wnd log
+* Core Tools : Copy, Paste, ... -> Add to ISelectableTarget
+* Plugin itf
+	* Save system
+	* Get objects
+	* Undo/Redo -> Event ? Itool?
+* Save plugin
+* Test runs & profiles
+* OgreAL
+* Memory leak
+* .dds loading
+* Light plugin
+* Physics (export)
+* Server & networking
+* Skybox / Domebox
+* Custom markers
+* Recast
+* Water/Fog planes
+* Instancing
+* Grass/Trees/..
+* Asset filtering
+* Undo/Redo
+* Engine selection
+* Engine options
+* Fullscreen mode
+* Camera & Grid plugin
+* Private virtual dest.
+* Polyvox -> Ogre threading ?
+* Web itf
+* Lib noise
+* Instance list
+* SelectTarget, UnselectTarget, UnselectAll
+
+
+
+
+* House creator (textures)
+* 
+
+
+
+
+* FIX .dds Ogre Terrain
+* Sounds
+* Lights
+* Finish terrain
+* Physics
+* Property box
+* Skybox / Domebox
+* Custom Markers
+* Recast
+* Ent Networking
+* Water/Fog
+
+
+
+
+
+
+
+
+
+
+
+
+  //void              test1(bool& b1, bool& b2)
+  //{
+  //  b1 = true;
+  //  b2 = false;
+  //}
+
+  //void              test2(int id, const std::string& sName)
+  //{
+  //  printf(sName.c_str());
+  //}
+  
+  
+    // Test
+    //IUIGallery* pGallery = pPanel->addGallery("Brushes");
+    //pGallery->addItem("Test1", "TerrainSprayToolIcon.bmp", "Plugins", "Test");
+    //pGallery->addItem("Test2", "TerrainSprayToolIcon.bmp", "Plugins");
+    //pGallery->eventUIDisplay +=
+    //  FastDelegate2<bool&, bool&>(this, &CTerrainCreateTool::test1);
+    //pGallery->eventItemSelected +=
+    //  FastDelegate2<int, const std::string&>(this, &CTerrainCreateTool::test2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stack>
+class CMyPropObject : public IPropertyHolder
+{
+public:
+  CMyPropObject()
+  {
+    m_iInt = 10;
+    m_sCurStrItem = "Choose me";
+    m_vecStrList.Get().push_back("Hello");
+    m_vecStrList.Get().push_back("Bye");
+    m_vecStrList.Get().push_back("What's up");
+  }
+
+private:
+  IWE_DEFINE_PROP_HOLDER();
+#if 0
+  {
+    CMyPropObject* pInst = this;
+
+    IUIPropertyGridElement* pLastElement = NULL;
+    IUIPropertyGridElement* pRoot = pGUI->getUIManager()->getPropertyGrid()->createRoot();
+
+    std::stack<IUIPropertyGridElement*> parentStack;
+    parentStack.push(pRoot);
+
+    pLastElement = parentStack.top()->addInt("MyInt", "A very important integer ! :-)\nCMyPropObject::m_iInt",
+      [pInst]() -> int { return pInst->m_iInt; }, FastDelegate1<int>(this, &CMyPropObject::onIntChange));
+    m_iInt.eventChanged += FastDelegate0<>(pLastElement, &IUIPropertyGridElement::propertyChanged);
+
+    pLastElement = parentStack.top()->addGroup("MyGroup");
+
+    {
+      parentStack.push(pLastElement);
+      
+      pLastElement = parentStack.top()->addInt("MyInt2", "A very important integer !! :-)\nCMyPropObject::m_iInt",
+        [pInst]() -> int { return pInst->m_iInt; }, FastDelegate1<int>(this, &CMyPropObject::onIntChange));
+
+      parentStack.pop();
+    }
+    
+    pLastElement = parentStack.top()->addVector3("MyVector3", [pInst](int index) -> float { return pInst->m_vecPos.Get()[index]; }, [pInst](float fNewVal, int index) { pInst->m_vecPos.Get()[index] = fNewVal; });
+    m_vecPos.eventChanged += FastDelegate0<>(pLastElement, &IUIPropertyGridElement::propertyChanged);
+    
+    //pLastElement = parentStack.top()->addComboBox("MyStrList", "List of strings !", [pInst](int index) -> const char* { if (index < 0) return pInst->m_sCurStrItem.Get().c_str(); else if (index >= pInst->m_vecStrList.Get().size()) return NULL; return pInst->m_vecStrList.Get()[index].c_str(); }, [pInst](const std::string& sNewVal, int index) { if (index < 0) pInst->m_sCurStrItem = sNewVal; });
+    //m_vecStrList.eventChanged += FastDelegate0<>(pLastElement, &IUIPropertyGridElement::propertyChanged);
+    //m_sCurStrItem.eventChanged += FastDelegate0<>(pLastElement, &IUIPropertyGridElement::propertyChanged);
+
+    return pRoot;
+  }
+#endif // !0
+
+  void onIntChange(int iNewInt)
+  {
+    m_iInt.Get() = iNewInt;
+  }
+
+public:
+  CPropVar<int>                       m_iInt;
+  CPropVar<bool>                      m_bBool;
+  CPropVar<float>                     m_fFloat;
+  CPropVar<Ogre::Vector3>             m_vecPos;
+  CPropVar<Ogre::Vector2>             m_vecAffine;
+  CPropVar<Ogre::Quaternion>          m_quatOrientation;
+  CPropVar<std::vector<std::string>>  m_vecStrList;
+  CPropVar<std::string>               m_sCurStrItem;
+};
+
+IWE_IMPLEMENT_PROP_BEGIN(CMyPropObject)
+  IWE_PROP_LEVEL_BEGIN("MyGroup")
+    IWE_PROP_LEVEL_BEGIN("MySubGroup 1")
+      IWE_PROP_LEVEL_BEGIN("MySubGroup 2")
+        IWE_PROP_INT("Test sub prop", "A very important integer ! :-)", m_iInt);
+      IWE_PROP_LEVEL_END()
+      IWE_PROP_COMBO("MyStrList", "List of strings !", m_vecStrList, m_sCurStrItem);
+    IWE_PROP_LEVEL_END()
+    IWE_PROP_INT("MyInt", "A very important integer ! :-)", m_iInt);
+    IWE_PROP_BOOL("MyBool", "A very important bool ! :-)", m_bBool);
+    IWE_PROP_FLOAT("MyFloat", "A very important float ! :-)", m_fFloat);
+    IWE_PROP_STRING("MyString", "A very important string ! :-)", m_sCurStrItem);
+    IWE_PROP_VECTOR2("MyVector2", m_vecAffine);
+    IWE_PROP_VECTOR3("MyVector3", m_vecPos);
+    IWE_PROP_QUATERNION("MyQuaternion", m_quatOrientation);
+  IWE_PROP_LEVEL_END()
+    
+  IWE_PROP_LEVEL_BEGIN("MyGroup2")
+    IWE_PROP_COMBO("MyStrList", "List of strings !", m_vecStrList, m_sCurStrItem);
+  IWE_PROP_LEVEL_END()
+IWE_IMPLEMENT_PROP_END()
+
+static CMyPropObject* pPropObj = NULL;
+void testFunc()
+{
+  pPropObj->m_iInt = 90;
+
+  pPropObj->m_vecPos.Get().x = 131.3f;
+  pPropObj->m_vecPos.Get().y = 12.9f;
+  pPropObj->m_vecPos.Get().z = 44.0f;
+  pPropObj->m_vecPos.Update();
+
+  pPropObj->m_sCurStrItem = "Ahah";
+  pPropObj->m_vecStrList.Get().pop_back();
+  pPropObj->m_vecStrList.Get().push_back("Hihi");
+  pPropObj->m_vecStrList.Get().push_back("Hoho");
+  pPropObj->m_vecStrList.Update();
+
+  pPropObj->m_quatOrientation = Ogre::Quaternion::ZERO;
+  pPropObj->m_vecAffine = Ogre::Vector2::UNIT_X;
+  pPropObj->m_bBool = true;
+  pPropObj->m_fFloat = -1992.12f;
+}
+void testUI(bool& a, bool& b)
+{
+  a = b = true;
+}
+
+
+
+
+
+  pPropObj = new CMyPropObject();
+  IUIPropertyGrid* pPropGrid = pGUI->getUIManager()->getPropertyGrid();
+  pPropGrid->setPropertyHolder(pPropObj);
+  
+  IUIMainMenu* pMainMenu = GetUIManager()->getMainMenu();
+
+  IUICategory* pCat = pMainMenu->addCategory("Home");
+  IUIPanel* pPanel = pCat->addPanel("Test");
+  
+  s_IWEImageData imgData;
+  
+  imgData.pData = pEngine->getResourceMgr()->getBitmapMaterial("MoveToolIcon.bmp", "Plugins", imgData.width, imgData.height, imgData.bpp);
+  
+  IUIButton* pButton = pPanel->addButton("Test", imgData);
+
+  pButton->setLargeButton(true);
+  pButton->eventPushed += FastDelegate0<>(testFunc);
+  pButton->eventUIDisplay += FastDelegate2<bool&, bool&>(testUI);

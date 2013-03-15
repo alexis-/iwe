@@ -1,0 +1,78 @@
+Hi,
+
+[u][Scroll down to check out the screenshots and skip the blabla[/u]]
+
+This is a world editor I've been working on for a few months now. I took a long break, but recently started working on it again, as I currently have more free time.
+Its main goal is to be very intuitive and easy to use. Eventually, I'll be using it to work on a small game (probly RPGish).
+
+[u][b]Features :[/b][/u]
+
+[list]
+  * Very intuitive (as the name suggest)
+  * Entities management
+[list]
+    * Drag&Drop from Asset menu
+    * Move / Scale / Rotate
+[/list]
+  * Undo/Redo (almost finished - just need a quick fix)
+  * Properties manager
+  * Full fledged terrain editing
+[list]
+    + Shape editing
+    + Texture splatting
+    + Color painting
+    + Brush system useable with all editing features
+[/list]
+  * In-editor material/shader editing (Yaose), reload and preview
+  * Lots of shortcuts to make your life easier
+  * Dockable panels
+  * [WIP] Voxel terrain editor
+  * [WIP] Online asset repository
+  * [WIP] Easy asset importing
+[/list]
+
+
+[b][u]Special thanks :[/u][/b]
+[list]
+ * The Ogitor team for their open source editor, which helped me a lot for the terrain editing features
+ * Ruud v A for his totally cool material editor - Yaose
+ * The Polyvox team for their voxel library
+ * Dylan (zarfius) for his Glue Editor which inspired me while working on this editor
+[/list]
+
+
+[b][u]Screenshots :[/u][/b]
+
+[u]None shall pass :-)[/u]
+
+[img]http://i.imgur.com/U12sS.jpg[/img]
+
+
+[u]Random terrain shape editing[/u]
+
+[img]http://i.imgur.com/hHYWu.jpg[/img]
+
+
+[u]Random terrain texture editing[/u]
+
+[img]http://i.imgur.com/xGDi6.jpg[/img]
+
+
+[u]Testing voxel terrains (WIP)[/u]
+
+[img]http://i.imgur.com/yjqZ4.jpg[/img]
+
+
+[u]Entity editing[/u]
+
+[img]http://i.imgur.com/pDeW0.png[/img]
+
+
+[u]Material editing/reload/preview[/u]
+
+[img]http://i.imgur.com/53Rer.png[/img]
+
+
+[u]Project/Asset management[/u]
+
+[img]http://i.imgur.com/W0RCE.png[/img]

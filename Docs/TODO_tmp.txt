@@ -1,0 +1,20 @@
+* Area system W/ custom properties (like areas with special color correction effects, etc)
+* All-in-one asset management
+  + Easy to use, complete material editor
+  + Mesh handy edit tools (like meshmagick)
+  + Export all assets in an organized format
+  + Putting together different assets (like a mesh with particle effects)
+  + .. Probly other stuffs I've written somewhere
+* Custom markers (to pinpoint specific positions with custom datas)
+* Different water editing tools
+  + Oceans (Hydrax, but there's no ocean tool which allows non-infinite planes)
+  + Rivers
+  + Lake
+* Fog planes
+* Integrating users engine inside the editor viewport
+* Voxel terrain editor
+* Terrain generator (libnoise, or w/e)
+* Custom collision planes (define custom planes defining collision areas)
+* Multi-user editing (yea that's not really a must, I'm just dreaming)
+* Animation, splines editing (for cutscenes, moving objects, etc)
+* A handy tool to stick meshes next to each others (like wall parts)

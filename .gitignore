@@ -1,13 +1,21 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+Misc/*
+Obj/*
+Bin/*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+*.obj
+*.pdb
+*.ilk
+*.sdf
+*.opensdf
+*.ipch
+*.log
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+Editor/CodeStat.exe
+Dependencies/OgreV1.8
+Dependencies/PolyVox/build/*
+Dependencies/*/Bin/*
+Dependencies/*/Lib/*
+Dependencies/*/Libs/*
+Dependencies/*/CMake/*
+.hg/*
+.hgignore

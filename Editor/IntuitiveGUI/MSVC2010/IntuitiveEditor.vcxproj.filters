@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HTML Help Files">
+      <UniqueIdentifier>{31d4ee9a-f99e-4c28-85de-2986c8bb5f27}</UniqueIdentifier>
+      <Extensions>hhp;hhc;hhk;gif;jpg</Extensions>
+    </Filter>
+    <Filter Include="HTML Help Topics">
+      <UniqueIdentifier>{225b47ce-5218-4a4e-86dc-4476decf5208}</UniqueIdentifier>
+      <Extensions>htm;html</Extensions>
+    </Filter>
+    <Filter Include="Source Files\RFC Forms">
+      <UniqueIdentifier>{0f85af23-c959-45c5-94d0-d6422180890a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{2a0201bc-3c4c-48d6-988d-4aa1d0838064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{14331057-b741-4db8-9079-84fa063a902e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource">
+      <UniqueIdentifier>{3c0a784b-e973-4490-b16d-421d4edeaaab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{5c076e4f-9941-4c4f-b881-eea767a06152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{1d3edf08-d621-4aba-bbf6-ae2b4c9d686d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Entity">
+      <UniqueIdentifier>{c1c12cc1-beac-431f-a5aa-bf8810a7286c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools">
+      <UniqueIdentifier>{b6c81fc1-c048-4a75-b454-938b56b11e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools\Base">
+      <UniqueIdentifier>{c3f0cc2b-8fcd-47de-8501-1ae64e28bc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RFC Forms\Custom">
+      <UniqueIdentifier>{d49cbd5d-8775-4319-bcea-3dea51bab6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RFC Forms\Custom\NewProjectFrame">
+      <UniqueIdentifier>{0e137629-eafd-462c-b378-118022b93f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{3c7d1c77-3d66-4ff8-80f1-c3a58bc481b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Save System">
+      <UniqueIdentifier>{beb07418-e1f7-4c86-aec5-05af5dcdef57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project\Save System\Systems">
+      <UniqueIdentifier>{213d6bda-f75e-4447-b138-33cf71e41b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools\Terrain">
+      <UniqueIdentifier>{7ed8df2c-828f-4800-88f6-5bf978b3fc16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools\Voxel Terrain">
+      <UniqueIdentifier>{cd949d71-5001-41ab-8111-7236f8b91021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Tools\Entities">
+      <UniqueIdentifier>{6630e8b6-b388-47ac-a401-4aa3e6da3e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor\Utils">
+      <UniqueIdentifier>{f636a65e-28b8-4b5a-aed5-48a9f08f09e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\PhysX">
+      <UniqueIdentifier>{74284f99-a4b0-4aaf-ae95-771a9b8bf767}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\info.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IntuitiveEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IntuitiveEditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IntuitiveEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hlp\IntuitiveEditor.hhk">
+      <Filter>HTML Help Files</Filter>
+    </None>
+    <None Include="hlp\IntuitiveEditor.hhc">
+      <Filter>HTML Help Files</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_color.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_fileopen.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_filesave.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_find.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_font.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_newtypedlg.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_replace.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidp_default.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_dockbar_top.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_status_bar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_toolbar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hidr_doc1type.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_app_about.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_app_exit.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_context_help.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear_all.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_copy.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_cut.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_find.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_paste.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_redo.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_repeat.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_replace.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_undo.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_close.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_mru_file1.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_new.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_open.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_save.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_save_as.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_send_mail.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_help_index.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_help_using.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_ht_caption.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_ht_nowhere.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_next_pane.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_prev_pane.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_close.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_maximize.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_minimize.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_move.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_nextwindow.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_prevwindow.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_restore.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_size.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_tasklist.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_ruler.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_status_bar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_toolbar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_all.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_arrange.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_cascade.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_new.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_split.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_horz.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_vert.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\main_index.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_edit.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_file.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_help.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_view.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_window.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\scrollbars.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\Images\Bullet.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icons32.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\newproject_icons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AddDirIcon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AddFileIcon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntuitiveEditorView.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="IntuitiveEditor.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Source Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="IntuitiveEditorDoc.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderEngine.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewport.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportGrid.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportCamera.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineUtils.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Source Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseEntity.h">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseEntity.h">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseEntityRender.h">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="IEditorEntity.h">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorEntity.h">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolManager.h">
+      <Filter>Source Files\Editor\Tools\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>Source Files\Editor\Tools\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ITool.h">
+      <Filter>Source Files\Editor\Tools\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorDatas.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorInteractions.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreView.h">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetViewer.h">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="BrushManager.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectSheet.h">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectMainTab.h">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectAssetsTab.h">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorStatic.h">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainManager.h">
+      <Filter>Source Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectManager.h">
+      <Filter>Source Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSystem.h">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSystemManager.h">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClInclude>
+    <ClInclude Include="IWESaveSystem.h">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="XProgressCtrl.h">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainMaterialGeneratorB.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelTerrainManager.h">
+      <Filter>Source Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelTerrainRenderable.h">
+      <Filter>Source Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizeableCube.h">
+      <Filter>Source Files\Editor\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="delayed_vector.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegateBind.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Source Files\Editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="IntuitiveEditorDoc.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="IntuitiveEditor.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="IntuitiveEditorView.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSetup.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportGrid.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Viewport.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files\RFC Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportCamera.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineUtils.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEntity.cpp">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseEntityRender.cpp">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorEntity.cpp">
+      <Filter>Source Files\Data\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool.cpp">
+      <Filter>Source Files\Editor\Tools\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolManager.cpp">
+      <Filter>Source Files\Editor\Tools\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorDatas.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorInteractions.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreView.cpp">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="BrushManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectSheet.cpp">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectMainTab.cpp">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectAssetsTab.cpp">
+      <Filter>Source Files\RFC Forms\Custom\NewProjectFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorStatic.cpp">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainManager.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectManager.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveSystem.cpp">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClCompile>
+    <ClCompile Include="IWESaveSystem.cpp">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveSystemManager.cpp">
+      <Filter>Source Files\Project\Save System</Filter>
+    </ClCompile>
+    <ClCompile Include="IWELoadSystem.cpp">
+      <Filter>Source Files\Project\Save System\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="XProgressCtrl.cpp">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainMaterialGeneratorB.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelTerrainManager.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainCreationTool.cpp">
+      <Filter>Source Files\Editor\Tools\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveTool.cpp">
+      <Filter>Source Files\Editor\Tools\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleTool.cpp">
+      <Filter>Source Files\Editor\Tools\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateTool.cpp">
+      <Filter>Source Files\Editor\Tools\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ResizeableCube.cpp">
+      <Filter>Source Files\Editor\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelTerrainCreationTool.cpp">
+      <Filter>Source Files\Editor\Tools\Voxel Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetViewer.cpp">
+      <Filter>Source Files\RFC Forms\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelTerrainEditTool.cpp">
+      <Filter>Source Files\Editor\Tools\Voxel Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainEditTool.cpp">
+      <Filter>Source Files\Editor\Tools\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntuitiveEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="hlp\IntuitiveEditor.hhp">
+      <Filter>HTML Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resource.h">
+      <Filter>Source Files\Resource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,180 @@
+Hi,
+
+[This is a rather long post, with lot of technical stuff, you can just scroll and check plugins for the most interesting part]
+
+It's been a while since I posted any update, so here I go.
+There have been so much changes that I will probably forget a lot of stuffs, actually most of the new features would deserve a whole post on their own.
+
+
+[b]1. Refactoring[/b]
+
+As mentioned in my previous post, I wanted to refactor and split up IWE in multiple modules :
+
+[list][*] GUI - The editor interface
+[*] Render module - Implement all the render logic (also possibly the game logic) and expose some of it. The render module can be user-defined, but a default one is provided.
+[*] Editor module - Define base editor stuffs, it's sort of a glue between the modules.
+[*] Plugins - Every tool is defined in plugins. There are 6 of them at the moment.[/list]
+
+All these modules communicate through C++ interfaces, and make extensive use of an event system (very similar to C# delegates - you'll see some of this if you keep reading).
+
+Most of the refactoring work - apart from splitting everything up - went in GUI abstraction.
+This is especially important for plugins. I wanted to make it easy to create new plugins, and interact with the GUI.
+
+I'll go quickly through each of them :
+
+[b]Abstracted GUI parts[/b]
+
+[img]http://i.imgur.com/joZxG.png?1[/img]
+
+
+[b]a. Property grids[/b]
+
+One of the most important part in a world editor, is editing object properties - (right panel on previous screenshot).
+Therefore it is only natural that exposing an object's attribute should be convenient.
+
+With the help of several classes and macros, I reached a result I am rather happy with. Here's a small snippet from the Light plugin :
+
+[code=cpp]IWE_IMPLEMENT_PROP_OVERRIDE_BEGIN(CLight, CIWESceneNode)
+
+  IWE_PROP_LEVEL_BEGIN("Light");
+
+    IWE_PROP_COMBO_S("Type", "Sets the type of light:\n - Point light sources give off light equally in all directions.\n"
+      " - Directional lights simulate parallel light beams from a distant source.\n - Spotlights simulate a cone of light.",
+      m_vecLightTypes, m_sLightType,
+      FastDelegate2<const std::string&, int>(this, &CLight::onSetLightType), false);
+
+    // More properties
+
+    IWE_PROP_LEVEL_BEGIN("Attenuation");
+
+      IWE_PROP_FLOAT_S("Range", "Absolute upper range of the light in world units.",
+        m_fAttenuationRange,
+        [pInst](float f) { pInst->m_fAttenuationRange = f; pInst->refreshAttenuation(); }, false);
+
+      // More properties
+
+    IWE_PROP_LEVEL_END();
+    
+    // More properties
+
+    IWE_PROP_BOOL_S("Lock Visual Helper", "",
+      m_bLockVisualHelper,
+      [pInst](bool b) {
+        pInst->m_bLockVisualHelper = b;
+        pInst->m_pVisualHelper->setVisible(b || pInst->m_bTargetSelected);
+      }, false);
+
+  IWE_PROP_LEVEL_END();
+
+IWE_IMPLEMENT_PROP_END();[/code]
+
+This snippet describe how to expose the properties of a CLight.
+CLight itself derives from a CIWESceneNode (I am currently changing this hierarchy though as this is bad OOP) which also expose some properties (position, scale, orientation, ..).
+Therefore it uses the IWE_IMPLEMENT_PROP_OVERRIDE_BEGIN macro which just appends the properties after those of CIWESceneNode.
+
+The properties themselves are bound to a variable and can define a getter and setter. These can be either lambda functions or FastDelegate (http://www.codeproject.com/Articles/7150/Member-Function-Pointers-and-the-Fastest-Possible).
+The variables are wrapped in a class which automatically detects (most of the time) changes made to them, and update the property grid accordingly.
+
+You can find more about how this works [url=http://www.codeproject.com/Articles/354706/MFC-Property-Grid-Helper-Abstraction]here[/url].
+
+
+[b]b. Project files / Drag-Drop[/b]
+
+The project explorer (left panel on previous screenshot) displays the available assets. Every plugin can register its own assets.
+For instance, IWE_PluginEntities which deals with the .mesh files and entities (no kidding) register all the mesh files this way :
+
+[code=cpp]IUIProjectTree*           pProjTree = GetUIManager()->getProjectTree();
+
+m_pAssetsCat = pProjTree->addCategory("Assets");
+m_pAssetsCat->addRegexFilter(".*\\.mesh");[/code]
+
+As you can see, it is registering a regular expression matching all *.mesh files. The result can be viewed on the screenshot, every mesh files available are listed under the "Assets" directory.
+
+Once the assets are displayed in the project tree, they can be drag-dropped in the scene. To do this, we register a delegate to handle drag-drop events :
+
+[code=cpp]GetUIManager()->eventDragEnter +=
+  FastDelegate3<const std::string&, IViewport*, const CIWEPoint<int>&, e_dropEffect>(this, &CPlugin::onDragEnter);
+GetUIManager()->eventDragOver +=
+  FastDelegate2<IViewport*, const CIWEPoint<int>&, e_dropEffect>(this, &CPlugin::onDragOver);
+GetUIManager()->eventDrop +=
+  FastDelegate2<IViewport*, const CIWEPoint<int>&, bool>(this, &CPlugin::onDrop);
+GetUIManager()->eventDragLeave +=
+  FastDelegate1<IViewport*>(this, &CPlugin::onDragLeave);[/code]
+
+I'll skip the drag-drop handling as there is nothing exciting with it, but this demonstrate how easy it is to add and deal with project tree items.
+Context menus are not yet abstracted, but I am planning on doing this very soon.
+
+
+[b]c. Main menu (Ribbon)[/b]
+
+This is where most of the tools buttons and items are displayed (Top panel on the screenshot).
+So far I have abstracted the following components : Button (small / Large), Separators, Gallery (image gallery) and Slider (numeric input).
+
+There's nothing really special about this so I'll just paste a small snippet :
+
+[code=cpp]IUIMainMenu* pMainMenu = GetGUI()->getUIManager()->getMainMenu();
+
+IUICategory* pCat = pMainMenu->addCategory("Terrain", 1);
+IUIPanel* pPanel = pCat->addPanel("Terrain Tools", 0);
+
+int iPos = 2;
+    
+// Linear Height Button
+m_pLinearHeight = pPanel->addButton("Linear Height", "HeightEditToolIcon.bmp", "Plugins", iPos++);
+m_pLinearHeight->setLargeButton(true);
+
+// [...]
+
+// Separator
+pPanel->addSeparator(iPos++);
+
+// [...][/code]
+
+As a side note, simple tools with a single button can simply override an helper class which automatically deal with all the button registering, callbacks, mouse inputs, etc. process.
+
+
+[b]d. Scene objects [WIP][/b]
+
+This is where all objects in the scene can be viewed, searched, and filtered. It is currently WIP but will work mostly like Project Tree.
+
+
+[b]e. Tabbed Documents - CLI/C++[/b]
+
+This is one of my favourite new feature. One of the main problem I saw with splitting up IWE was the ability to create new GUIs in plugins.
+
+With CLI/C++ support, plugins can use C# WinForm components, and create interfaces. These can then either be dialogs, or User Controls.
+User Controls can be tabbed in the main area as a document, much like you files in Visual Studio or your favourite IDE.
+
+A document is basically a tabbed window in the main area, for instance, the render viewport is a document.
+
+Here is a GUI plugin I put together quickly using WinForm, for a future NPC editing tool I will be working on :
+
+[img]http://i.imgur.com/afx5j.png?1[/img]
+
+
+
+[b]2. Plugins[/b]
+
+Another job that came with refactoring was moving all previous tools code to plugins. Hopefully that wasn't too hard as they were already coded in a modular fashion.
+
+So far I have implemented 6 plugins :
+[list][*] Base Tools plugin - This adds the Move/Rotate/Scale tools, which apply their respective actions on objects that implement the ISelectableTarget. It also includes some other minor features.
+[*] Entity plugin - Create and edit entities
+[*] Terrain plugin - Create and edit terrains (Ogre::Terrain) - Same features as previous version
+[*] Light plugin
+[*] Sound plugin
+[*] NPC Editor plugin (WIP) - Will allow to edit NPCs in a somewhat generic fashion[/list]
+
+The newcomers are the last 3 plugins, the other tools were already available in the latest version.
+The terrain plugin went through some work though, and now support multiple terrain editing, which wasn't the case before.
+
+Here's a screenshot showing some lights editing, rendered with a custom render engine I've started putting together for my game :
+
+[img]http://i.imgur.com/LPrN1.jpg?1[/img]
+
+
+Another feature which has been implemented (or at least finalized) is the full support for undo/redo in plugins.
+I am not very happy with the way I deal with it as of now though, and would like to write some helper functions/macros to ease this process.
+
+To conclude, a smaller but still cool feature, plugins can be embedded in their own .zip files, along with all their resources.
+For instance, when I resume my work on voxels, and write the Voxel plugin, I'll embbed all shaders, materials and other resources in the plugin .zip file.

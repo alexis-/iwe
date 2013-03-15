@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="re2">
+</Property><Property Name="Solution File" Value="C:\Work\Ogre\Intuitive\re2\re2.sln">
+</Property><Property Name="Date" Value="dimanche 18 mars 2012">
+</Property><Property Name="Time" Value="00:57:45">
+</Property></Properties><Event ErrorLevel="3" Project="re2" Source="re2.vcproj" Description="OneWayUpgrade">
+</Event><Event ErrorLevel="0" Project="re2" Source="re2.vcproj" Description="Converting project file 'C:\Work\Ogre\Intuitive\re2\re2.vcproj'.">
+</Event><Event ErrorLevel="1" Project="re2" Source="re2.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="re2" Source="re2.vcproj" Description="All user macros reported below for configuration 'Debug|Win32' are used before their definition, which can cause undesirable build results; this is not supported in this release. You can resolve this by changing the inclusion order of the consuming property sheets and making sure they come after the property sheets defining the user macros.">
+</Event><Event ErrorLevel="1" Project="re2" Source="re2.vcproj" Description="MSB4211: C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (172,5); The property &quot;RunCodeAnalysisDependsOn&quot; is being set to a value for the first time, but it was already consumed at &quot;C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (171,5)&quot;.">
+</Event><Event ErrorLevel="1" Project="re2" Source="re2.vcproj" Description="All user macros reported below for configuration 'Release|Win32' are used before their definition, which can cause undesirable build results; this is not supported in this release. You can resolve this by changing the inclusion order of the consuming property sheets and making sure they come after the property sheets defining the user macros.">
+</Event><Event ErrorLevel="1" Project="re2" Source="re2.vcproj" Description="MSB4211: C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (172,5); The property &quot;RunCodeAnalysisDependsOn&quot; is being set to a value for the first time, but it was already consumed at &quot;C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (171,5)&quot;.">
+</Event><Event ErrorLevel="0" Project="re2" Source="re2.vcproj" Description="Done converting to new project file 'C:\Work\Ogre\Intuitive\re2\re2.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="re2" Source="re2.vcproj" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,38 @@
+# CMake generation dependency list for this directory.
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeLists.txt
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeSystem.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCCompiler.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCXXCompiler.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCPlatform.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCPlatform.cmake
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindZLIB.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindwxWidgets.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindDoxygen.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake

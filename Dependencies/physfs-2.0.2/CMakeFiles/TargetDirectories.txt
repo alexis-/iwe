@@ -1,0 +1,5 @@
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/ALL_BUILD.dir
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/ZERO_CHECK.dir
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/physfs.dir
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/physfs-static.dir
+C:/Work/Ogre/Intuitive/Dependencies/physfs-2.0.2/CMakeFiles/test_physfs.dir

@@ -1,0 +1,26 @@
+FastFormat - TODO lists
+=======================
+
+Updated:    7th February 2012
+
+
+FastFormat 0.7+ TODOs:
+---------------------
+
+ + full distribution of makefiles, project files, workspace files, etc.
+
+ ~ decent docs
+
+ ~ decent website
+
+ + GNU Autotools : "./configure; make; make install"
+
+ + Debian package
+
+ + RPM package
+
+ + GitHub repo
+
+ + WindowsMessageBox sink elicit title from parent window(s)
+
+=============================== End of file ================================

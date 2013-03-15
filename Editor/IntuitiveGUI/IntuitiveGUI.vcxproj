@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectGuid>{396BD524-FDE2-44A2-9BED-3301E565A98D}</ProjectGuid>
+    <RootNamespace>IntuitiveGUI</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and $(VisualStudioVersion) == ''">$(VCTargetsPath11)</VCTargetsPath>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectName>IntuitiveGUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Bin\Editor\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\Editor\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Bin\Editor\$(Configuration)\$(Platform)\</OutDir>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IntDir>$(SolutionDir)..\Obj\Editor\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Bin\Editor\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\Editor\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Bin\Editor\$(Configuration)\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)..\Obj\Editor\$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_IWE_GUI;_AFXDLL;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IWEPublic);$(PhysFSSdk);$(RE2Sdk)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zm800 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(Re2SDK)\lib\$(Platform)\$(Configuration);$(PhysFSSdk)\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mfc110d.lib;re2.lib;physfs.lib;$(ZLIB_LIBRARY);</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <Profile>true</Profile>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_IWE_GUI;_AFXDLL;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions);X64</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IWEPublic);$(PhysFSSdk);$(RE2Sdk)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(Re2SDK)\lib\$(Platform)\$(Configuration);$(PhysFSSdk)\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>re2.lib;physfs.lib;$(ZLIB_LIBRARY64);</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+      <Profile>true</Profile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_IWE_GUI;_AFXDLL;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IWEPublic);$(PhysFSSdk);$(RE2Sdk)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>re2.lib;physfs.lib;$(ZLIB_LIBRARY)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(Re2SDK)\lib\$(Platform)\$(Configuration);$(PhysFSSdk)\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_IWE_GUI;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions);X64</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IWEPublic);$(PhysFSSdk);$(RE2Sdk)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>re2.lib;physfs.lib;$(ZLIB_LIBRARY64);</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(Re2SDK)\lib\$(Platform)\$(Configuration);$(PhysFSSdk)\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="hlp\afx_hidd_color.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_fileopen.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_filesave.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_find.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_font.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_newtypedlg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidd_replace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidp_default.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_dockbar_top.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_status_bar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\afx_hidw_toolbar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hidr_doc1type.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_app_about.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_app_exit.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_context_help.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_clear.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_clear_all.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_copy.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_cut.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_find.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_paste.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_redo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_repeat.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_replace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_edit_undo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_close.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_mru_file1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_new.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_open.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_save.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_save_as.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_file_send_mail.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_help_index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_help_using.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_ht_caption.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_ht_nowhere.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_next_pane.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_prev_pane.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_close.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_maximize.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_minimize.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_move.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_nextwindow.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_prevwindow.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_restore.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_size.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_sc_tasklist.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_ruler.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_status_bar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_view_toolbar.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_all.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_arrange.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_cascade.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_new.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_split.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile_horz.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\hid_window_tile_vert.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\Images\Bullet.gif" />
+    <None Include="hlp\IntuitiveEditor.hhc" />
+    <None Include="hlp\IntuitiveEditor.hhk" />
+    <CustomBuild Include="hlp\IntuitiveEditor.hhp">
+      <FileType>Document</FileType>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)IntuitiveEditor.chm;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)IntuitiveEditor.chm;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">start /wait hhc "hlp\IntuitiveEditor.hhp"
+if not exist "hlp\IntuitiveEditor.chm" goto :HelpError
+copy "hlp\IntuitiveEditor.chm" "$(OutDir)IntuitiveEditor.chm"
+goto :HelpDone
+:HelpError
+echo hlp\IntuitiveEditor.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">start /wait hhc "hlp\IntuitiveEditor.hhp"
+if not exist "hlp\IntuitiveEditor.chm" goto :HelpError
+copy "hlp\IntuitiveEditor.chm" "$(OutDir)IntuitiveEditor.chm"
+goto :HelpDone
+:HelpError
+echo hlp\IntuitiveEditor.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help file...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Making help file...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)IntuitiveEditor.chm;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)IntuitiveEditor.chm;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hlp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hhc "hlp\IntuitiveEditor.hhp"
+if not exist "hlp\IntuitiveEditor.chm" goto :HelpError
+copy "hlp\IntuitiveEditor.chm" "$(OutDir)IntuitiveEditor.chm"
+goto :HelpDone
+:HelpError
+echo hlp\IntuitiveEditor.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">start /wait hhc "hlp\IntuitiveEditor.hhp"
+if not exist "hlp\IntuitiveEditor.chm" goto :HelpError
+copy "hlp\IntuitiveEditor.chm" "$(OutDir)IntuitiveEditor.chm"
+goto :HelpDone
+:HelpError
+echo hlp\IntuitiveEditor.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help file...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Making help file...</Message>
+    </CustomBuild>
+    <None Include="hlp\main_index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_edit.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_file.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_help.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_view.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\menu_window.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="hlp\scrollbars.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="res\AddDirIcon.bmp" />
+    <None Include="res\AddFileIcon.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\info.bmp" />
+    <None Include="res\IntuitiveEditor.ico" />
+    <None Include="res\IntuitiveEditor.rc2" />
+    <None Include="res\IntuitiveEditorDoc.ico" />
+    <None Include="res\main.bmp" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\newproject_icons.bmp" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetViewer.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="CLIChildFrm.h" />
+    <ClInclude Include="CLIDoc.h" />
+    <ClInclude Include="CLIView.h" />
+    <ClInclude Include="CMFCRibbonFixedButton.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="CPropertyGrid.h" />
+    <ClInclude Include="CPropertyGridCustomCtrl.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="IntuitiveEditor.h" />
+    <ClInclude Include="IntuitiveEditorDoc.h" />
+    <ClInclude Include="IntuitiveEditorView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemoryModule.h" />
+    <ClInclude Include="NewProjectAssetsTab.h" />
+    <ClInclude Include="NewProjectMainTab.h" />
+    <ClInclude Include="NewProjectSheet.h" />
+    <ClInclude Include="OgreView.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="UIMainMenu.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UIProjectTree.h" />
+    <ClInclude Include="UIPropertyGrid.h" />
+    <ClInclude Include="UISceneTree.h" />
+    <ClInclude Include="UITreeItemList.h" />
+    <ClInclude Include="XProgressCtrl.h" />
+    <CustomBuild Include="Resource.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">echo // Generated Help Map file.  Used by IntuitiveEditor.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">echo // Generated Help Map file.  Used by IntuitiveEditor.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating map file for help compiler...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating map file for help compiler...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hlp\HTMLDefines.h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">echo // Generated Help Map file.  Used by IntuitiveEditor.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">echo // Generated Help Map file.  Used by IntuitiveEditor.HHP. &gt; "hlp\HTMLDefines.h"
+echo. &gt; "hlp\HTMLDefines.h"
+echo // Commands (ID_* and IDM_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Prompts (IDP_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDP_,HIDP_,0x30000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Resources (IDR_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDR_,HIDR_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Dialogs (IDD_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h IDD_,HIDD_,0x20000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+echo. &gt;&gt; "hlp\HTMLDefines.h"
+echo // Frame Controls (IDW_*) &gt;&gt; "hlp\HTMLDefines.h"
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 "%(FullPath)" &gt;&gt; "hlp\HTMLDefines.h"
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating map file for help compiler...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating map file for help compiler...</Message>
+    </CustomBuild>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ViewTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetViewer.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="CLIChildFrm.cpp" />
+    <ClCompile Include="CLIDoc.cpp" />
+    <ClCompile Include="CLIView.cpp" />
+    <ClCompile Include="ColorStatic.cpp" />
+    <ClCompile Include="CPropertyGrid.cpp" />
+    <ClCompile Include="CPropertyGridCustomCtrl.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="IntuitiveEditor.cpp" />
+    <ClCompile Include="IntuitiveEditorDoc.cpp" />
+    <ClCompile Include="IntuitiveEditorView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MemoryModule.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NewProjectAssetsTab.cpp" />
+    <ClCompile Include="NewProjectMainTab.cpp" />
+    <ClCompile Include="NewProjectSheet.cpp" />
+    <ClCompile Include="OgreView.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UITreeItemList.cpp" />
+    <ClCompile Include="UIMainMenu.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="UIProjectTree.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UIPropertyGrid.cpp" />
+    <ClCompile Include="UISceneTree.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="XProgressCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntuitiveGUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\IWEIcon_32.bmp" />
+    <Image Include="res\IWELogo_32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="IntuitiveGUI.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

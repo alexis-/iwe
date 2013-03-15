@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="util\arena.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\bitstate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\compile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\dfa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\filtered_re2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\mimics_pcre.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\nfa.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\onepass.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\parse.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\perl_groups.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\prefilter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\prefilter_tree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\prog.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\re2.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\regexp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\rune.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\simplify.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\stringpiece.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\stringprintf.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\strutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\tostring.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\unicode_casefold.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="re2\unicode_groups.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\valgrind.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util\arena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\atomicops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\benchmark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\filtered_re2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\pcre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\prefilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\prefilter_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\prog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\re2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\regexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\sparse_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\sparse_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\stringpiece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\unicode_casefold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\unicode_groups.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\utf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\valgrind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\variadic_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="re2\walker-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
