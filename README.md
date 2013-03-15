@@ -1,4 +1,4 @@
-iwe
+Intuitive World Editor
 ===
 
-Intuitive World Editor
+Ogre3D scene editor
